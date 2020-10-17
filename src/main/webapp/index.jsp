@@ -11,6 +11,7 @@
     <title>Vo Tran Minh Quan's Assignments</title>
 </head>
 <body>
+<h1>Hello World!</h1>
 <a href="Week01/Exercise01/index.html">Bai tap 1</a>
 <br>
 <a href="Week01/Exercise02/index.html">Bai tap 2</a>
