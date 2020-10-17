@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Vo Tran Minh Quan's Assignments</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Hello World! I am Vo Tran Minh Quan!</h1>
