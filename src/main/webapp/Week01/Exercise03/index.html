@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="frmPurchase" method="get" action="process.jsp">
+    <table id="info">
+        <tr>
+            <td><p style="text-align: center"><b>Processor</b></p></td>
+            <td><p style="text-align: center"><b>Accessories</b></p></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+                    <input type="radio" name="processor" value="Celeron D">
+                </label>Celeron D
+                <br>
+                <label>
+                    <input type="radio" name="processor" value="Pentium IV">
+                </label>Pentium IV
+                <br>
+                <label>
+                    <input type="radio" name="processor" value="Pentium D">
+                </label>Pentium D
+            </td>
+            <td>
+                <label>
+                    <input type="checkbox" name="monitor">
+                </label>Monitor
+                <br>
+                <label>
+                    <select name="peripherals" size="numvisible" multiple>
+                        <option value="Camera">Camera</option>
+                        <option value="Printer">Printer</option>
+                        <option value="Scanner">Scanner</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <input id="btnPurchase" type="submit" value="PURCHASE">
+</form>
+</body>
+</html>
