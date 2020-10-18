@@ -22,7 +22,7 @@
             </td>
 
             <td class="cell">
-                <a class="link" href="exercises.html">Exercises</a>
+                <a class="link" href="assignments.html">Assignments</a>
             </td>
 
             <td class="cell">
