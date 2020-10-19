@@ -10,6 +10,7 @@
 <head>
     <title>Vo Tran Minh Quan's Assignments</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9636dbf883.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -38,11 +39,77 @@
 </header>
 
 <article>
-    <h1>Hello World!</h1>
+    <form action="show-assignments.jsp" style="margin-bottom: 0px">
+        <select name="week" id="week">
+            <option value="00">--Choose week--</option>
+            <option value="01">Week 01</option>
+            <option value="02">Week 02</option>
+            <option value="03">Week 03</option>
+        </select>
+        &nbsp;
+        <input id="btnChoose" type="submit" value="Choose">
+    </form>
+    <%
+        String week = request.getParameter("week");
+        switch (week)
+        {
+            case "00":
+    %>
+                <br>
+                <hr>
+                <blockquote>
+                    <i class="fas fa-quote-left"></i>&nbsp;WHERE THERE IS A WILL
+                    <br>
+                    THERE IS A ROAD!&nbsp;<i class="fas fa-quote-right"></i>
+                </blockquote>
+                <hr>
+                <br>
+    <%
+                break;
+            case "01":
+    %>
+                <h2>Week 01</h2>
+                <table class="exercise-table">
+                    <tbody>
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week01/Exercise01/index.html" target="_blank">Exercise 01: First web application with JSP</a>
+                        </td>
+                    </tr>
+
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week01/Exercise02/index.html" target="_blank">Exercise 02: JSP for complex forms</a>
+                        </td>
+                    </tr>
+
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week01/Exercise03/index.html" target="_blank">Exercise 03: Complex input elements</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+    <%
+                break;
+        }
+    %>
 </article>
 
 <footer>
-    &copy; Web Assignments <span class="footer-seperator">|</span> Designed by <a class="fb-link" href="https://www.facebook.com/minhquan992/"><b>Vo Tran Minh Quan</b></a>
+    &copy; Web Assignments <span class="footer-seperator">|</span> Designed by <a class="fb-link" href="https://www.facebook.com/minhquan992/" target="_blank"><b>Vo Tran Minh Quan</b></a>
     <br>
     <br>
     Ho Chi Minh City University of Technology and Education (HCMUTE)
