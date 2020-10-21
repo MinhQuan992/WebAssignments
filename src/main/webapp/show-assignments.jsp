@@ -44,7 +44,6 @@
             <option value="00">--Choose week--</option>
             <option value="01">Week 01</option>
             <option value="02">Week 02</option>
-            <option value="03">Week 03</option>
         </select>
         &nbsp;
         <input id="btnChoose" type="submit" value="Choose">
@@ -98,6 +97,24 @@
 
                         <td class="exercise-cell">
                             <a class="exercise-link" href="Week01/Exercise03/index.html" target="_blank">Exercise 03: Complex input elements</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+    <%
+                break;
+            case "02":
+    %>
+                <h2>Week 02</h2>
+                <table class="exercise-table">
+                    <tbody>
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week02/Exercise01/index.jsp" target="_blank">Exercise 01: Rewrite with Servlet</a>
                         </td>
                     </tr>
                     </tbody>

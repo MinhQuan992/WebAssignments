@@ -30,7 +30,7 @@
 <br>
 <p>Thank you for your order of <%=numberToPurchase%> widgets, <%=name%>!</p>
 <p>At $<%=pricePerWidget%>, your bill will be $<%=Math.round(pricePerWidget*numberToPurchase)%>.</p>
-<p>You will shortly receive an email for confirmation at <%=email%>!</p>
+<p>You will shortly receive an email confirmation at <%=email%>!</p>
 <p><strong>We wish you a great day<3</strong></p>
 <%
     }

@@ -109,6 +109,7 @@ article {
 
 #btnChoose:hover {
     cursor: pointer;
+    background-color: red;
 }
 
 blockquote {
