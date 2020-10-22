@@ -22,16 +22,16 @@
 <%
     if (numberToPurchase == 0) {
 %>
-<p>Thank you <%=name%> for visiting our store! We wish you a great day!</p>
+<p class="message">Thank you <%=name%> for visiting our store! We wish you a great day!</p>
 <%
 } else {
+        double total = pricePerWidget*numberToPurchase;
 %>
 <h1 class="page-title">Order Confirmation</h1>
-<br>
-<p>Thank you for your order of <%=numberToPurchase%> widgets, <%=name%>!</p>
-<p>At $<%=pricePerWidget%>, your bill will be $<%=Math.round(pricePerWidget*numberToPurchase)%>.</p>
-<p>You will shortly receive an email confirmation at <%=email%>!</p>
-<p><strong>We wish you a great day<3</strong></p>
+<p class="message">Thank you for your order of <%=numberToPurchase%> widgets, <%=name%>!</p>
+<p class="message">At $<%=pricePerWidget%>, your bill will be $<%=total%>.</p>
+<p class="message">You will shortly receive an email confirmation at <%=email%>!</p>
+<p class="message"><strong>We wish you a great day<3</strong></p>
 <%
     }
 %>

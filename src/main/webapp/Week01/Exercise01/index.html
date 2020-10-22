@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form name="purchase" method="get" action="process.jsp">
-    <table>
+<form id="frmPurchase" name="purchase" method="get" action="process.jsp">
+    <table id="table-info">
         <tr>
-            <td>Quantity:</td>
+            <td><p id="lblQuantity">Quantity:</p></td>
             <td><input id="txtQuantity" type="text" name="quantity" placeholder="Ex.: 5" required></td>
         </tr>
     </table>
 
-    <input type="submit" value="SUBMIT">
+    <input id="btnSubmit" type="submit" value="SUBMIT">
 </form>
 </body>
 </html>

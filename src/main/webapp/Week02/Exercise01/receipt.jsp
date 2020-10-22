@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <%
@@ -18,13 +19,10 @@
     String totalCost = (String)request.getAttribute("cost");
     String pricePerUnit = (String)request.getAttribute("pricePerUnit");
 %>
-<h2 style="text-align: center">Order Confirmation</h2>
-Thank you for your order of <%=quantity%> widgets, <%=name%>!
-<br>
-At $<%=pricePerUnit%>, your bill will be $<%=totalCost%>.
-<br>
-You will shortly receive an email confirmation at <%=email%>.
-<br>
-<b>We wish you a great day<3</b>
+<h1 style="text-align: center">Order Confirmation</h1>
+<p class="message">Thank you for your order of <%=quantity%> widgets, <%=name%>!</p>
+<p class="message">At $<%=pricePerUnit%>, your bill will be $<%=totalCost%>.</p>
+<p class="message">You will shortly receive an email confirmation at <%=email%>.</p>
+<p class="message"><b>We wish you a great day<3</b></p>
 </body>
 </html>

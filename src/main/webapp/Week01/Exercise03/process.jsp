@@ -22,22 +22,21 @@
         processor = "No processor selected";
     }
 %>
-<h1>Order Summary:</h1>
-<br>
+<h1 style="text-align: center">Order Summary</h1>
 <table id="order-summary">
     <tr>
-        <td><p style="text-align: center"><b>Processor</b></p></td>
-        <td><%=processor%></td>
+        <td class="table-head table-two-cell"><p style="text-align: center"><b>Processor</b></p></td>
+        <td class="table-two-cell">&nbsp;<%=processor%></td>
     </tr>
 
     <tr>
-        <td><p style="text-align: center"><b>Accessories</b></p></td>
-        <td>
+        <td class="table-head table-two-cell"><p style="text-align: center"><b>Accessories</b></p></td>
+        <td class="table-two-cell">
             <%
                 if (monitor == null && accessories == null)
                 {
             %>
-                    <p>No accessory selected</p>
+                    <p>&nbsp;No accessory selected</p>
             <%
                 }
                 else
@@ -45,8 +44,7 @@
                     if (monitor != null)
                     {
             %>
-                        <p>Monitor</p>
-                        <br>
+                        <p>&nbsp;Monitor</p>
             <%
                     }
 
@@ -55,7 +53,7 @@
                         for (int i = 0; i < accessories.length; i++)
                         {
             %>
-                            <%=accessories[i]%>
+                            &nbsp;<%=accessories[i]%>
                             <br>
             <%
                         }

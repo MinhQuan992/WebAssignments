@@ -8,13 +8,16 @@
 <body>
 <form name="frmPurchase" method="get" action="process.jsp">
     <table id="info">
+        <thead>
         <tr>
-            <td><p style="text-align: center"><b>Processor</b></p></td>
-            <td><p style="text-align: center"><b>Accessories</b></p></td>
+            <td class="table-one-cell"><p style="text-align: center"><b>Processor</b></p></td>
+            <td class="table-one-cell"><p style="text-align: center"><b>Accessories</b></p></td>
         </tr>
+        </thead>
 
+        <tbody>
         <tr>
-            <td>
+            <td class="table-one-cell">
                 <label>
                     <input type="radio" name="processor" value="Celeron D">
                 </label>Celeron D
@@ -27,13 +30,13 @@
                     <input type="radio" name="processor" value="Pentium D">
                 </label>Pentium D
             </td>
-            <td>
+            <td class="table-one-cell">
                 <label>
                     <input type="checkbox" name="monitor">
                 </label>Monitor
                 <br>
                 <label>
-                    <select name="peripherals" size="numvisible" multiple>
+                    <select name="peripherals" size="numvisible" style="font-size: 20px" multiple>
                         <option value="Camera">Camera</option>
                         <option value="Printer">Printer</option>
                         <option value="Scanner">Scanner</option>
@@ -41,6 +44,7 @@
                 </label>
             </td>
         </tr>
+        </tbody>
     </table>
     <input id="btnPurchase" type="submit" value="PURCHASE">
 </form>

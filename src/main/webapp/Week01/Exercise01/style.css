@@ -1,0 +1,47 @@
+#frmPurchase {
+    width: 50%;
+    margin-left: 320px;
+    margin-top: 225px;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+}
+
+#table-info {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 165px;
+}
+
+#lblQuantity {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#txtQuantity {
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+
+#btnSubmit {
+    width: 100px;
+    height: 30px;
+    margin-left: 305px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumturquoise;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+}
+
+.message {
+    font-size: 30px;
+}

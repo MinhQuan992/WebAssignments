@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Thank you!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <%
@@ -18,12 +19,12 @@
 <%
     if (numberOfWidgets == 0) {
 %>
-<p>Thank you for visiting our store! We wish you a great day!</p>
+<p class="message">Thank you for visiting our store! We wish you a great day!</p>
 <%
 } else {
 %>
-<p>Thank you for your order of <strong><%=numberOfWidgets%> widgets!</strong></p>
-<p><strong>We wish you a great day<3</strong></p>
+<p class="message">Thank you for your order of <strong><%=numberOfWidgets%> widgets!</strong></p>
+<p class="message"><strong>We wish you a great day<3</strong></p>
 <%
     }
 %>

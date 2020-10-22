@@ -1,7 +1,46 @@
-td {
+#info {
+    border-collapse: collapse;
+    margin-left: 470px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+thead {
+    background-color: lightblue;
+}
+
+.table-one-cell {
+    width: 30%;
     border: 2px solid black;
 }
 
-#info {
+#btnPurchase {
+    width: 110px;
+    height: 30px;
+    background-color: lightgreen;
+    font-weight: bold;
+    margin-left: 620px;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+#btnPurchase:hover {
+    cursor: pointer;
+}
+
+#order-summary {
     border-collapse: collapse;
+    width: 500px;
+    margin-left: 410px;
+    font-size: 20px;
+}
+
+.table-head {
+    width: 25%;
+    height: 40px;
+    background-color: lightblue;
+}
+
+.table-two-cell {
+    border: 2px solid black;
 }
