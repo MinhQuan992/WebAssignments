@@ -7,6 +7,10 @@
     <servlet>
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>TestServlet</servlet-class>
+        <init-param>
+            <param-name>pricePerUnit</param-name>
+            <param-value>9.95</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
@@ -16,22 +20,22 @@
     
     <servlet>
         <servlet-name>ErrorServlet</servlet-name>
-        <jsp-file>/Week02/Exercise01/error.jsp</jsp-file>
+        <jsp-file>/Week03/Exercise01/error.jsp</jsp-file>
     </servlet>
     
     <servlet-mapping>
         <servlet-name>ErrorServlet</servlet-name>
-        <url-pattern>/Week02/Exercise01/error.jsp</url-pattern>
+        <url-pattern>/error.jsp</url-pattern>
     </servlet-mapping>
     
     <servlet>
         <servlet-name>ReceiptServlet</servlet-name>
-        <jsp-file>/Week02/Exercise01/receipt.jsp</jsp-file>
+        <jsp-file>/Week03/Exercise01/receipt.jsp</jsp-file>
     </servlet>
     
     <servlet-mapping>
         <servlet-name>ReceiptServlet</servlet-name>
-        <url-pattern>/Week02/Exercise01/receipt.jsp</url-pattern>
+        <url-pattern>/receipt.jsp</url-pattern>
     </servlet-mapping>
 
 </web-app>

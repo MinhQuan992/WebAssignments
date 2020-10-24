@@ -9,10 +9,10 @@
 <html>
 <head>
     <title>Error</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Week03/Exercise01/style.css">
 </head>
 <body>
 <h1>Error in input!</h1>
-<p class="message">You must provide a name, an email, and a legal quantity of widgets. Please follow <a href="index.jsp">this link</a> and try again!</p>
+<p class="message">You must provide a name, an email, and a legal quantity of widgets. Please follow <a href="Week03/Exercise01/index.jsp">this link</a> and try again!</p>
 </body>
 </html>

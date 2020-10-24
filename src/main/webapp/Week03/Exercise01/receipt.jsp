@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Order Confirmation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Week03/Exercise01/style.css">
 </head>
 <body>
 <%

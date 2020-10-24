@@ -1,4 +1,5 @@
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,16 +27,28 @@ public class TestServlet extends HttpServlet {
 
         // If any are empty, set the url to forward to the error page.
         // Ortherwise, forward to the normal receipt
-        if (name.equals("") || email.equals("") || quantity.equals("")) {
-            url = "/Week02/Exercise01/error.jsp";
+        if (name.equals("") || email.equals("") || quantity.equals(""))
+        {
+            url = "/error.jsp";
             System.out.println("Going to error page");
-        } else {
-            double pricePerUnit = 9.95;
-            int quantityNumber = Integer.parseInt(quantity);
-            double totalCost = pricePerUnit * quantityNumber;
-            request.setAttribute("pricePerUnit", "" + pricePerUnit);
-            request.setAttribute("cost", "" + totalCost);
-            url = "/Week02/Exercise01/receipt.jsp";
+        }
+        else
+        {
+            ServletConfig config = getServletConfig();
+            String priceString = config.getInitParameter("pricePerUnit");
+            try
+            {
+                double pricePerUnit = Double.parseDouble(priceString);
+                int quantityNumber = Integer.parseInt(quantity);
+                double totalCost = pricePerUnit * quantityNumber;
+                request.setAttribute("pricePerUnit", "" + pricePerUnit);
+                request.setAttribute("cost", "" + totalCost);
+                url = "/receipt.jsp";
+            }
+            catch (Exception exception)
+            {
+                url = "/error.jsp";
+            }
         }
 
         // Create the dispatcher from the url and perform the forward
