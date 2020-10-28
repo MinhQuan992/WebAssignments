@@ -1,7 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: Vo Tran Minh Quan
+  Date: 10/28/2020
+  Time: 8:22 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Vo Tran Minh Quan's Assignments</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9636dbf883.js" crossorigin="anonymous"></script>
@@ -9,7 +15,7 @@
 <body>
 <header>
     <img src="Images/banner.png">
-    <table class="menu" style="margin-top: -6px">
+    <table class="menu">
         <tbody>
         <tr>
             <td class="cell">
@@ -35,9 +41,15 @@
 <article>
     <form action="show-assignments.jsp">
         <select name="week" id="week">
-            <option value="00">--Choose week--</option>
-            <option value="02">Week 02</option>
-            <option value="03">Week 03</option>
+            <option value="0">--Choose week--</option>
+            <%
+                for (int i = 2; i < 5; i++)
+                {
+            %>
+                    <option value="<%=i%>">Week <%=i%></option>
+            <%
+                }
+            %>
         </select>
         &nbsp;
         <input id="btnChoose" type="submit" value="Choose">

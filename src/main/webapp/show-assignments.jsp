@@ -39,11 +39,17 @@
 </header>
 
 <article>
-    <form action="show-assignments.jsp" style="margin-bottom: 0px">
+    <form action="show-assignments.jsp" style="margin-bottom: 25px">
         <select name="week" id="week">
-            <option value="00">--Choose week--</option>
-            <option value="02">Week 02</option>
-            <option value="03">Week 03</option>
+            <option value="0">--Choose week--</option>
+            <%
+                for (int i = 2; i < 5; i++)
+                {
+            %>
+                    <option value="<%=i%>">Week <%=i%></option>
+            <%
+                }
+            %>
         </select>
         &nbsp;
         <input id="btnChoose" type="submit" value="Choose">
@@ -52,7 +58,7 @@
         String week = request.getParameter("week");
         switch (week)
         {
-            case "00":
+            case "0":
     %>
                 <br>
                 <hr>
@@ -65,9 +71,9 @@
                 <br>
     <%
                 break;
-            case "02":
+            case "2":
     %>
-                <h2>Week 02</h2>
+                <h2>Week 2</h2>
                 <table class="exercise-table">
                     <tbody>
                     <tr class="row-of-table">
@@ -103,9 +109,9 @@
                 </table>
     <%
                 break;
-            case "03":
+            case "3":
     %>
-                <h2>Week 03</h2>
+                <h2>Week 3</h2>
                 <table class="exercise-table">
                     <tbody>
                     <tr class="row-of-table">
@@ -115,6 +121,24 @@
 
                         <td class="exercise-cell">
                             <a class="exercise-link" href="Week03/Exercise01/index.jsp" target="_blank">Exercise 01: Rewrite with Servlet</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+    <%
+                break;
+            case "4":
+    %>
+                <h2>Week 4</h2>
+                <table class="exercise-table">
+                    <tbody>
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week04/Exercise01/index.jsp" target="_blank">Exercise 01: Input validation and error handling</a>
                         </td>
                     </tr>
                     </tbody>

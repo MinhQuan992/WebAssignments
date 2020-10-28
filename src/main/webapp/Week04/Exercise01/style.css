@@ -1,0 +1,67 @@
+#frmInfo {
+    margin-left: 450px;
+}
+
+#customer-info {
+    margin-left: -75px;
+}
+
+.label-cell {
+    width: 310px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.textbox {
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.require-cell {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.month-year {
+    height: 30px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#purchase-info {
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+thead {
+    background-color: lightblue;
+}
+
+.table-cell {
+    width: 30%;
+    border: 2px solid black;
+}
+
+#btnSubmit {
+    margin-top: 15px;
+    margin-left: 170px;
+    width: 110px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: lime;
+    border: none;
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+    background-color: limegreen;
+}
