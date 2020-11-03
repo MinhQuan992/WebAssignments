@@ -37,5 +37,9 @@
         <servlet-name>ReceiptServlet</servlet-name>
         <url-pattern>/receipt.jsp</url-pattern>
     </servlet-mapping>
+    
+    <error-page>
+        <location>/Week04/Exercise01/default-error.jsp</location>
+    </error-page>
 
 </web-app>
