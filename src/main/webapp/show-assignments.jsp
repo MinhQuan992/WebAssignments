@@ -43,7 +43,7 @@
         <select name="week" id="week">
             <option value="0">--Choose week--</option>
             <%
-                for (int i = 2; i < 5; i++)
+                for (int i = 2; i < 6; i++)
                 {
             %>
                     <option value="<%=i%>">Week <%=i%></option>
@@ -139,6 +139,24 @@
 
                         <td class="exercise-cell">
                             <a class="exercise-link" href="Week04/Exercise01/index.jsp" target="_blank">Exercise 01: Input validation and error handling</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+    <%
+                break;
+            case "5":
+    %>
+                <h2>Week 5</h2>
+                <table class="exercise-table">
+                    <tbody>
+                    <tr class="row-of-table">
+                        <td class="icon-cell">
+                            <i class="fas fa-book-open"></i>
+                        </td>
+
+                        <td class="exercise-cell">
+                            <a class="exercise-link" href="Week05/Exercise01/index.jsp" target="_blank">Exercise 01: Sessions for access control</a>
                         </td>
                     </tr>
                     </tbody>

@@ -43,7 +43,7 @@
         <select name="week" id="week">
             <option value="0">--Choose week--</option>
             <%
-                for (int i = 2; i < 5; i++)
+                for (int i = 2; i < 6; i++)
                 {
             %>
                     <option value="<%=i%>">Week <%=i%></option>

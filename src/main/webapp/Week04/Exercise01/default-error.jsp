@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Page Unavailable</title>
-    <link rel="stylesheet", href="${pageContext.request.contextPath}/Week04/Exercise01/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week04/Exercise01/style.css">
 </head>
 <body>
 <h1 style="text-align: center">Page Unavailable</h1>
