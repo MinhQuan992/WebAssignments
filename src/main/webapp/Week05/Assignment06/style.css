@@ -1,0 +1,25 @@
+#info {
+    margin-left: 435px;
+}
+
+td {
+    height: 40px;
+}
+
+.txtInfo {
+    width: 375px;
+}
+
+#btnSelect {
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+#frmQuantity {
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.message {
+    font-size: 20px;
+}

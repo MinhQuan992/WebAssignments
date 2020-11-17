@@ -24,6 +24,15 @@ public class Validate extends HttpServlet {
         String cardNumber = (request.getParameter("cardNumber")).trim();
         int month = Integer.parseInt(request.getParameter("month"));
         int year = Integer.parseInt(request.getParameter("year"));
+
+        request.setAttribute("name", "" + name);
+        request.setAttribute("phone", "" + phone);
+        request.setAttribute("email", "" + email);
+        request.setAttribute("quantity", "" + quantity);
+        request.setAttribute("cardNumber", "" + cardNumber);
+        request.setAttribute("month", "" + month);
+        request.setAttribute("year", "" + year);
+
         boolean hasError = false;
 
         if (name.equals(""))
@@ -63,7 +72,7 @@ public class Validate extends HttpServlet {
             try
             {
                 int quantityNumber = Integer.parseInt(quantity);
-                if (quantityNumber == 0)
+                if (quantityNumber <= 0)
                 {
                     request.setAttribute("quantityError", "At least 1");
                     hasError = true;
@@ -96,11 +105,11 @@ public class Validate extends HttpServlet {
         String url;
         if (hasError)
         {
-            url = "/Week04/Exercise01/index.jsp";
+            url = "/Week04/Assignment05/index.jsp";
         }
         else
         {
-            url = "/Week04/Exercise01/confirmation.jsp";
+            url = "/Week04/Assignment05/confirmation.jsp";
         }
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         dispatcher.forward(request, response);

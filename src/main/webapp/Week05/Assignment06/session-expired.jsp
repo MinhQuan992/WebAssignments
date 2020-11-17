@@ -9,9 +9,10 @@
 <html>
 <head>
     <title>Session Expired</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week05/Assignment06/style.css">
 </head>
 <body>
-<h1>Session Expired</h1>
-<p>Please follow <a href="${pageContext.request.contextPath}/Week05/Exercise01/index.jsp">this link</a> to login again!</p>
+<h1 style="text-align: center;">Session Expired</h1>
+<p class="message">Please follow <a href="${pageContext.request.contextPath}/Week05/Assignment06/index.jsp">this link</a> to login again!</p>
 </body>
 </html>

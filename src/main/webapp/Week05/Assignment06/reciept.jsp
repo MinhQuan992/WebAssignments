@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Order Confirmation</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week05/Assignment06/style.css">
 </head>
 <body>
 <%
@@ -17,9 +18,9 @@
     String name = (String)session.getAttribute("name");
     String email = (String)session.getAttribute("email");
 %>
-<h1>Order Confirmation</h1>
-<p>Thank you for your order of <%=quantity%> widgets, <%=name%>!</p>
-<p>Your bill will be <%=totalCost%>.</p>
-<p>You will shortly receive an email confirmation at <%=email%>.</p>
+<h1 style="text-align: center">Order Confirmation</h1>
+<p class="message">Thank you for your order of <%=quantity%> widgets, <%=name%>!</p>
+<p class="message">Your bill will be <%=totalCost%>.</p>
+<p class="message">You will shortly receive an email confirmation at <%=email%>.</p>
 </body>
 </html>

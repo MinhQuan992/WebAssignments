@@ -22,7 +22,7 @@ public class SessionServlet extends HttpServlet {
         session.setAttribute("name", name);
         session.setAttribute("email", email);
 
-        String url = "/Week05/Exercise01/quantity.jsp";
+        String url = "/Week05/Assignment06/quantity.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

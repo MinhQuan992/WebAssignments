@@ -158,3 +158,8 @@ hr {
     font-weight: bold;
     color: orange;
 }
+
+/* Design for default-error.jsp */
+.message {
+    font-size: 25px;
+}

@@ -8,12 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Exercise 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Assignment 04</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week03/Assignment04/style.css">
 </head>
 <body>
 <h1 class="page-title">Widget Order Form</h1>
-
 <form id="frmPurchase" name="purchase" method="get" action="${pageContext.request.contextPath}/TestServlet">
     <table id="info">
         <tr>

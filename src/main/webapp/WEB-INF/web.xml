@@ -20,7 +20,7 @@
     
     <servlet>
         <servlet-name>ErrorServlet</servlet-name>
-        <jsp-file>/Week03/Exercise01/error.jsp</jsp-file>
+        <jsp-file>/Week03/Assignment04/error.jsp</jsp-file>
     </servlet>
     
     <servlet-mapping>
@@ -30,7 +30,7 @@
     
     <servlet>
         <servlet-name>ReceiptServlet</servlet-name>
-        <jsp-file>/Week03/Exercise01/receipt.jsp</jsp-file>
+        <jsp-file>/Week03/Assignment04/receipt.jsp</jsp-file>
     </servlet>
     
     <servlet-mapping>
@@ -39,11 +39,7 @@
     </servlet-mapping>
     
     <error-page>
-        <location>/Week04/Exercise01/default-error.jsp</location>
+        <location>/default-error.jsp</location>
     </error-page>
-
-    <session-config>
-        <session-timeout>1</session-timeout>
-    </session-config>
 
 </web-app>

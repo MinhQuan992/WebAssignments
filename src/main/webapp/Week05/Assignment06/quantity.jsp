@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Quantity</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week05/Assignment06/style.css">
 </head>
 <body>
 <%
@@ -19,9 +20,9 @@
 <%
     }
 %>
-<form action="${pageContext.request.contextPath}/Week05/Exercise01/reciept.jsp" method="get">
-    <label for="quantity">Number to purchase:</label>
-    <input id="quantity" name="quantity" type="text">
+<form id="frmQuantity" action="${pageContext.request.contextPath}/Week05/Assignment06/reciept.jsp" method="get">
+    <label for="txtQuantity">Number to purchase:</label>
+    <input id="txtQuantity" name="quantity" type="text">
     <input type="submit" value="SUBMIT">
 </form>
 </body>

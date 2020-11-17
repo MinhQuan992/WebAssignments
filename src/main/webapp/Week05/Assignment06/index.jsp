@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Exercise 01</title>
+    <title>Assignment 06</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week05/Assignment06/style.css">
 </head>
 <body>
 <h1 style="text-align: center">Enter your information</h1>
-<form id="info" action="${pageContext.request.contextPath}/SessionServlet" method="get" style="margin-left: 435px">
+<form id="info" action="${pageContext.request.contextPath}/SessionServlet" method="get">
     <table>
         <tbody>
         <tr>
@@ -21,7 +22,7 @@
             </td>
 
             <td>
-                <input class="textbox" type="text" name="customerName" required>
+                <input class="txtInfo" type="text" name="customerName" required>
             </td>
         </tr>
 
@@ -31,7 +32,7 @@
             </td>
 
             <td>
-                <input class="textbox" type="email" name="customerEmail" required>
+                <input class="txtInfo" type="email" name="customerEmail" required>
             </td>
         </tr>
         </tbody>

@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Order Summary</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/Week02/Assignment02.2/style.css">
 </head>
 <body>
 <%

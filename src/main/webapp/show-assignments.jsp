@@ -43,7 +43,7 @@
         <select name="week" id="week">
             <option value="0">--Choose week--</option>
             <%
-                for (int i = 2; i < 6; i++)
+                for (int i = 2; i < 5; i++)
                 {
             %>
                     <option value="<%=i%>">Week <%=i%></option>
@@ -82,7 +82,7 @@
                         </td>
 
                         <td class="exercise-cell">
-                            <a class="exercise-link" href="Week02/Exercise01/index.html" target="_blank">Exercise 01: First web application with JSP</a>
+                            <a class="exercise-link" href="Week02/Assignment01/index.html" target="_blank">Assignment 01: First web application with JSP</a>
                         </td>
                     </tr>
 
@@ -92,7 +92,7 @@
                         </td>
 
                         <td class="exercise-cell">
-                            <a class="exercise-link" href="Week02/Exercise02/index.html" target="_blank">Exercise 02: JSP for complex forms</a>
+                            <a class="exercise-link" href="Week02/Assignment02.1/index.html" target="_blank">Assignment 02.1: JSP for complex forms</a>
                         </td>
                     </tr>
 
@@ -102,7 +102,7 @@
                         </td>
 
                         <td class="exercise-cell">
-                            <a class="exercise-link" href="Week02/Exercise03/index.html" target="_blank">Exercise 03: Complex input elements</a>
+                            <a class="exercise-link" href="Week02/Assignment02.2/index.html" target="_blank">Assignment 02.2: Complex input elements</a>
                         </td>
                     </tr>
                     </tbody>
@@ -120,7 +120,7 @@
                         </td>
 
                         <td class="exercise-cell">
-                            <a class="exercise-link" href="Week03/Exercise01/index.jsp" target="_blank">Exercise 01: Rewrite with Servlet</a>
+                            <a class="exercise-link" href="Week03/Assignment04/index.jsp" target="_blank">Assignment 04: Control - View architecture</a>
                         </td>
                     </tr>
                     </tbody>
@@ -138,25 +138,7 @@
                         </td>
 
                         <td class="exercise-cell">
-                            <a class="exercise-link" href="Week04/Exercise01/index.jsp" target="_blank">Exercise 01: Input validation and error handling</a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-    <%
-                break;
-            case "5":
-    %>
-                <h2>Week 5</h2>
-                <table class="exercise-table">
-                    <tbody>
-                    <tr class="row-of-table">
-                        <td class="icon-cell">
-                            <i class="fas fa-book-open"></i>
-                        </td>
-
-                        <td class="exercise-cell">
-                            <a class="exercise-link" href="Week05/Exercise01/index.jsp" target="_blank">Exercise 01: Sessions for access control</a>
+                            <a class="exercise-link" href="Week04/Assignment05/index.jsp" target="_blank">Assignment 05: Input validation and error handling</a>
                         </td>
                     </tr>
                     </tbody>

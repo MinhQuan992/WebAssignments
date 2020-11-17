@@ -40,10 +40,20 @@ public class TestServlet extends HttpServlet {
             {
                 double pricePerUnit = Double.parseDouble(priceString);
                 int quantityNumber = Integer.parseInt(quantity);
-                double totalCost = pricePerUnit * quantityNumber;
-                request.setAttribute("pricePerUnit", "" + pricePerUnit);
-                request.setAttribute("cost", "" + totalCost);
-                url = "/receipt.jsp";
+                if (quantityNumber <= 0)
+                {
+                    url = "/error.jsp";
+                }
+                else
+                {
+                    double totalCost = pricePerUnit * quantityNumber;
+                    request.setAttribute("name", "" + name);
+                    request.setAttribute("email","" + email);
+                    request.setAttribute("quantity", "" + quantity);
+                    request.setAttribute("pricePerUnit", "" + pricePerUnit);
+                    request.setAttribute("cost", "" + totalCost);
+                    url = "/receipt.jsp";
+                }
             }
             catch (Exception exception)
             {
